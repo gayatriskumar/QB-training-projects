@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animations and graphics in jquery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("div").animate({left:'200px'},"slow");
+    $("div").animate({fontSize: '5em'},"slow")
+    });
+    });
+</script>
+
+</head>
+
+<style>
+    div{
+        background-color: chartreuse;
+        color: darkgreen;
+        font-family: 'Architects Daughter', cursive;
+        margin: 3px solid green;
+        border:5px solid goldenrod;
+        height: 500px;
+        width: 500px;
+        font-size: 20px;
+        font-weight: 300;
+        border-radius: 30px;
+        position:absolute;
+    }
+
+    button{
+        background-color: indianred;
+        color: maroon;
+        height: 70px;
+        width: 200px;
+        border:2px solid black;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    h2{
+        color: orangered;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: 600;
+        font-size: 30px;
+        position:absolute;
+    }
+
+    *{
+        background-color:black;
+        
+    }
+</style>
+
+
+<body>
+    
+    <div>Woah !!!</div>
+    <button>Click here</button>
+    <h2>The show hide and toggle thing</h2>
+
+</body>
+
+
+</html>
